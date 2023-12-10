@@ -1,7 +1,8 @@
 import React from 'react'
+import { useState } from 'react';
 
 const Main = () => {
-    var items = [
+    const [itemlist,setitemlist] = useState([
         {
             id:1,
             title:"food",
@@ -13,18 +14,31 @@ const Main = () => {
             checked:false
         },
         {
-            id:1,
+            id:3,
             title:"oil",
             checked:false
         }, 
-    ];
+    ])
+    var checkboxclicked = (id)=>{
+        const updatedlist = itemlist.map((item)=>item.id ===id?{...item,checked:!item.checked}:item)
+        setitemlist(updatedlist);
+    }
+    var deleteclick = (id)=>{
+        const updatedlist = itemlist.filter((item)=>{
+            if(id!==item.id){
+                return  item;
+            }
+        })
+        setitemlist(updatedlist);
+    }
   return (
     <div>
         {
-            items.map((item)=>(
+            itemlist.map((item)=>(
                 <ul key={item.id} > 
-                    <div>{item.title}</div>
-                    <input type="checkbox" name="" id=""  value={item.checked}/>
+                    <label style={(item.checked )?{textDecoration:"line-through"}:null}>{item.title}</label>
+                    <input type="checkbox" checked={item.checked} onChange={()=>checkboxclicked(item.id)}  />
+                    <button onClick={()=> deleteclick(item.id)}>Delete</button>
                 </ul>
             ))
         }
