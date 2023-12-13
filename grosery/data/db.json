@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "food",
+      "checked": false
+    },
+    {
+      "id": 3,
+      "title": "oil",
+      "checked": false
+    }
+  ]
+}
