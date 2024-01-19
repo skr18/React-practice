@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 const Header = ()=>{
-    const[data,setdata] = useState("");
+    const[datas,setdata] = useState([]);
     useEffect(()=>{
         var getdata=async()=>{
             var res = await fetch("https://jsonplaceholder.typicode.com/users");
             if(res.ok){
                 var datalists = await res.json();
-                // var lists
-                // datalists.forEach(list => {
-                //     lists.append(list);
-                // });
-                 console.log(datalists)
                 setdata(datalists);
             }
         }
@@ -47,11 +42,11 @@ const Header = ()=>{
                 <button onClick={chnageComments}>Comments</button>
             </div>
             <div>
-                {data.map((items)=>{
-                    <ul key={items.id}>
-                        <li>items.address</li>
-                    </ul>
-                })}
+                {datas.map(item=>(
+                    <li key={item.id}>
+                        {JSON.stringify(item)}
+                    </li>
+                ))}
             </div>
             
         </div>

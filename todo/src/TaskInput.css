@@ -1,0 +1,22 @@
+.container{
+    margin: auto;
+    border: 1px solid black;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 20vh;
+    margin-top: 50px;
+}
+label{
+    margin: 2%;
+}
+input{
+    margin: 2%;
+    width: 30%;
+}
+button{
+    margin: 2%;
+    width: 15%;
+    background-color: greenyellow;
+}
