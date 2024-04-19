@@ -1,0 +1,22 @@
+.form{
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #ececec;
+    padding: 10px;
+}
+input{
+    width: 200px;
+}
+label{
+    width: 20%;
+}
+.SubmitButton{
+    background-color: blueviolet;
+    color: white;
+    margin-right: 23px;
+    margin-top: 15px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}

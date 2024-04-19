@@ -1,0 +1,25 @@
+.cardConatiner{
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 10px;
+    width: 25%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.titleBlock{
+    display: flex;
+    justify-content: space-between;
+}
+.descriptionBlock{
+    margin: 5px;
+}
+.addToCartButton{
+    width: max-content;
+    border: 1px solid aqua;
+    padding: 8px;
+    background-color: white;
+    font-weight: 600;
+    color: #058383;
+    align-self:end;
+}

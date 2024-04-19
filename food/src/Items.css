@@ -1,0 +1,16 @@
+.productContainer{
+    background-color: rgb(188 188 188);
+    margin: 15px 30px;
+    height: auto;
+    display: grid;
+    align-items: center;
+}
+.productBox{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+}

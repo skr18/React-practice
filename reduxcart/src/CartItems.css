@@ -1,0 +1,19 @@
+.cartBlock{
+    width: 45%;
+    background-color: rgb(165, 168, 171);
+    height: max-content;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 15px;
+}
+.cartTitleBlock{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 7px;
+}
+.cartActionBlock{
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,19 @@
+.Cardcontainer{
+    margin: 15px;
+    padding: 10px;
+    background-color: #dfdfdf;
+}
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.actionContainer{
+    margin-top: 10px;
+}
+.cardButton{
+    background-color: blueviolet;
+    color: white;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+}
